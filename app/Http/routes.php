@@ -11,12 +11,10 @@
 |
 */
 
+Route::get('/', 'WelcomeController@index');
+Route::get('home', 'HomeController@index');
 
-Route::resource('/','InicioController');
-Route::resource('inicio','InicioController');
-Route::get('contacto','InicioController@contacto');
-Route::resource('producto','ProductosController');
-Route::resource('categoria','CategoriaController');
+Route::resource('prueba','PruebaController');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
