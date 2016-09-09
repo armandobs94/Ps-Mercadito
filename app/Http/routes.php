@@ -15,6 +15,9 @@ Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
 
 Route::resource('prueba','PruebaController');
+/*-----------------------------PANEL DE CONTROL----------------------*/
+Route::resource('panel','PanelController');
+Route::resource('panel-nuevo-usuario','PanelController@create');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
