@@ -17,6 +17,10 @@ class PanelController extends Controller {
 		return view('panel_inicio');
 	}
 
+	public function listado(){
+		return view('panel_usuario_listado');
+	}
+
 	/**
 	 * Show the form for creating a new resource.
 	 *
@@ -24,7 +28,7 @@ class PanelController extends Controller {
 	 */
 	public function create()
 	{
-		return view('panel_usuario');
+		return view('panel_usuario_nuevo');
 	}
 
 	/**

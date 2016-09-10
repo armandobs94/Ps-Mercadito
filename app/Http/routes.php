@@ -18,6 +18,7 @@ Route::resource('prueba','PruebaController');
 /*-----------------------------PANEL DE CONTROL----------------------*/
 Route::resource('panel','PanelController');
 Route::resource('panel-nuevo-usuario','PanelController@create');
+Route::resource('panel-ver-usuarios','PanelController@listado');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

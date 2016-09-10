@@ -1,37 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<!-- start: Meta -->
 	<meta charset="utf-8">
-	<title>ManzShop - Manzanillo</title>
-	<meta name="description" content="Bootstrap Metro Dashboard">
-	<meta name="author" content="Adapter by: Armando Blanco">
-	<meta name="keyword" content="Manz-Shop">
-	<!-- end: Meta -->
-	<!-- start: Mobile Specific -->
+	<title>Panel de Control</title>
+	<meta name="author" content="ManzShop">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- end: Mobile Specific -->
-	<!-- start: CSS -->
 	<link id="bootstrap-style" href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link id="base-style" href="css/style.css" rel="stylesheet">
 	<link id="base-style-responsive" href="css/style-responsive.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
-	<!-- end: CSS -->
-	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<link id="ie-style" href="css/ie.css" rel="stylesheet">
-	<![endif]-->
-	<!--[if IE 9]>
-		<link id="ie9style" href="css/ie9.css" rel="stylesheet">
-	<![endif]-->
-	<!-- start: Favicon -->
 	<link rel="shortcut icon" href="img/favicon.ico">
-	<!-- end: Favicon -->	
 </head>
+
 <body>
-	<!-- start: Header -->
+	<!-- Barra superior -->
 	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container-fluid">
@@ -40,51 +23,50 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="#"><span>ManzShop</span></a>							
-			<!-- start: Header Menu -->
+				<a class="brand" href="#"><span>ManzShop</span></a><!-- Titulo superior -->
+				<!-- start: Menu superior -->
 				<div class="nav-no-collapse header-nav">
 					<ul class="nav pull-right">
-						<!-- start: User Dropdown -->
+						<!-- start:Opciones Usuario -->
 						<li class="dropdown">
 							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-								<i class="halflings-icon white user"></i>
-								Usuario
+								<i class="halflings-icon white user"></i> 
+								Nombre Usuario
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-menu-title">
- 									<span>Configuraci&oacute;n</span>
+ 									<span>Opciones</span>
 								</li>
-								<li><a href="#"><i class="halflings-icon user"></i> Mi Perfil</a></li>
+								<li><a href="#"><i class="halflings-icon user"></i> Perfil</a></li>
 								<li><a href="login.html"><i class="halflings-icon off"></i> Salir</a></li>
 							</ul>
 						</li>
-						<!-- end: User Dropdown -->
+						<!-- end:Opciones Usuario-->
 					</ul>
 				</div>
-			<!-- end: Header Menu -->	
+				<!-- end:Menu Superior -->
 			</div>
 		</div>
 	</div>
-	<!-- end: Header Menu-->
-		<div class="container-fluid-full">
+	<!-- End:Barra superior -->
+	<div class="container-fluid-full">
 		<div class="row-fluid">
-			<!-- start: Main Menu -->
+			<!-- start: Menu Izq -->
 			<div id="sidebar-left" class="span2">
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
 						<li>
 							<a href="#">
-								<i class="icon-bar-chart"></i>
-								<span class="hidden-tablet"> Panel de Control</span>
+								<i class="icon-bar-chart"></i><!-- Icono -->
+								<span class="hidden-tablet">&nbsp;Panel de Control</span>
 							</a>
 						</li>
-						<!-- Usuarios -->
 						<li>
 							<a class="dropmenu" href="#">
-								<i class="halflings-icon white user"></i>
-								<span class="hidden-tablet"> Usuarios</span>
-								<i class="icon-chevron-down"></i>
+							<i class="halflings-icon white user"></i>
+							<span class="hidden-tablet"> Usuarios</span>
+							<i class="icon-chevron-down"></i>
 							</a>
 							<ul>
 								<li><a class="submenu" href="#"><i class="icon-plus"></i><span class="hidden-tablet"> Agregar Usuario</span></a></li>
@@ -92,7 +74,6 @@
 								<li><a class="submenu" href="#"><i class="icon-eye-close"></i><span class="hidden-tablet"> Ver tipos de Usuarios</span></a></li>
 							</ul>	
 						</li>
-						<!-- End Usuarios -->
 						<!-- Categorias -->
 						<li>
 							<a class="dropmenu" href="#">
@@ -105,8 +86,19 @@
 								<li><a class="submenu" href="#"><i class="icon-file-alt"></i><span class="hidden-tablet"> Ver Categor&iacute;as</span></a></li>
 							</ul>	
 						</li>
-						<!-- End Categorias -->
-						<!-- Mensajes -->
+						<!-- end:Categorias -->
+						<li>
+							<a class="dropmenu" href="#">
+								<i class="icon-comments-alt"></i>
+								<span class="hidden-tablet">&nbsp;Anuncios</span>
+								<i class="icon-chevron-down"></i>
+							</a>
+							<ul>
+								<li><a class="submenu" href="#"><i class="icon-plus"></i><span class="hidden-tablet"> Nuevo</span></a></li>
+								<li><a class="submenu" href="#"><i class="icon-file-alt"></i><span class="hidden-tablet"> Anuncios Publicados</span></a></li>
+							</ul>	
+						</li>
+						<!-- end:Anuncios -->
 						<li>
 							<a href="#">
 								<i class="icon-envelope"></i>
@@ -114,8 +106,7 @@
 								<span class="label label-important" style="margin-left: 50px;">0</span>
 							</a>
 						</li>
-						<!-- End Mensajes -->
-						<!-- Tickets -->
+						<!-- end:Mensajes -->
 						<li>
 							<a href="#">
 								<i class="icon-barcode"></i>
@@ -123,20 +114,7 @@
 								<span class="label label-important" style="margin-left: 66px;">2</span>
 							</a>
 						</li>
-						<!-- End Tickets -->
-						<!-- Avisos -->
-						<li>
-							<a class="dropmenu" href="#">
-								<i class="icon-comments-alt"></i>
-								<span class="hidden-tablet">&nbsp;Avisos</span>
-								<i class="icon-chevron-down"></i>
-							</a>
-							<ul>
-								<li><a class="submenu" href="#"><i class="icon-plus"></i><span class="hidden-tablet"> Nuevo</span></a></li>
-								<li><a class="submenu" href="#"><i class="icon-file-alt"></i><span class="hidden-tablet"> Ver Avisos</span></a></li>
-							</ul>	
-						</li>
-						<!-- End Avisos -->
+						<!-- end:Tickets -->
 						<li>
 							<a href="login.html">
 								<i class="icon-lock"></i>
@@ -146,49 +124,47 @@
 					</ul>
 				</div>
 			</div>
-			<!-- end: Main Menu -->
-			
+			<!-- end: Menu Izq -->
 			<noscript>
 				<div class="alert alert-block span10">
-					<h4 class="alert-heading">Cuidado!</h4>
-					<p>Es necesario activar <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> para que este sitio pueda funcionar.</p>
+					<h4 class="alert-heading">Error!</h4>
+					<p>Necesitas activar <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> para que este sitio funcione adecuadamente.</p>
 				</div>
 			</noscript>
-			
 			<!-- start: Content -->
-		<div id="content" class="span10">
+			<div id="content" class="span10">
+			<!--start:Barra de navegacion -->
 			<ul class="breadcrumb">
 				@yield('navegacion')
 			</ul>
-
-			@yield('contenido')
-		</div><!--/.fluid-container-->
-	
-			<!-- end: Content -->
-		</div><!--/#content.span10-->
-		</div><!--/fluid-row-->
+			<!-- end:Barra de navegacion -->					
+			<!-- start:Contenido -->
+				@yield('contenido')
+			<!-- end:Contenido -->
+	</div><!--/.fluid-container-->
+		<!-- end: Content -->
+	</div><!--/#content.span10-->
+	</div><!--/fluid-row-->
 		
 	<div class="modal hide fade" id="myModal">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal">×</button>
-			<h3>Configurar</h3>
+			<h3>Configuracion</h3>
 		</div>
 		<div class="modal-body">
-			<p>Configuraciones aqui</p>
+			<p>Algo de la configuracion aqui</p>
 		</div>
 		<div class="modal-footer">
 			<a href="#" class="btn" data-dismiss="modal">Cerrar</a>
-			<a href="#" class="btn btn-primary">Guardar Cambios</a>
+			<a href="#" class="btn btn-primary">Guardar cambios</a>
 		</div>
 	</div>
-<!-- Fix -->
 	<div class="clearfix"></div>
-<!-- End Fix -->
-<footer>
-	<p>
-		<span style="text-align:left;float:left">&copy; 2016 <a href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" alt="Bootstrap_Metro_Dashboard">Bootstrap Metro Dashboard</a></span>	
-	</p>
-</footer>
+	<footer>
+		<p>
+			<span style="text-align:left;float:left">&copy; 2016 <a href="#" alt="Bootstrap_Metro_Dashboard" style="color: orange;">ManzShop sin fines de lucro. Consulta aquí los términos y condiciones.</a></span>
+		</p>
+	</footer>
 <!-- start: JavaScript-->
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery-migrate-1.0.0.min.js"></script>
