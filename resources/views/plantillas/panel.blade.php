@@ -9,6 +9,7 @@
 	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link id="base-style" href="css/style.css" rel="stylesheet">
 	<link id="base-style-responsive" href="css/style-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/aplicacion.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="img/favicon.ico">
 </head>
@@ -57,21 +58,22 @@
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
 						<li>
-							<a href="#">
+							<a href="/panel">
 								<i class="icon-bar-chart"></i><!-- Icono -->
 								<span class="hidden-tablet">&nbsp;Panel de Control</span>
 							</a>
 						</li>
+						<!-- start: usuarios -->
+						<!-- end: usuarios -->
 						<li>
 							<a class="dropmenu" href="#">
-							<i class="halflings-icon white user"></i>
-							<span class="hidden-tablet"> Usuarios</span>
-							<i class="icon-chevron-down"></i>
+								<i class="icon-group"></i>
+								<span class="hidden-tablet">&nbsp;Usuarios</span>
+								<i class="icon-chevron-down"></i>
 							</a>
 							<ul>
-								<li><a class="submenu" href="#"><i class="icon-plus"></i><span class="hidden-tablet"> Agregar Usuario</span></a></li>
-								<li><a class="submenu" href="#"><i class="icon-file-alt"></i><span class="hidden-tablet"> Ver Usuarios</span></a></li>
-								<li><a class="submenu" href="#"><i class="icon-eye-close"></i><span class="hidden-tablet"> Ver tipos de Usuarios</span></a></li>
+								<li><a class="submenu" href="/panel-usuarios-nuevo"><i class="icon-plus"></i><span class="hidden-tablet">&nbsp;Agregar Usuario</span></a></li>
+								<li><a class="submenu" href="/panel-usuarios-lista"><i class="icon-file-alt"></i><span class="hidden-tablet">&nbsp;Usuarios Registrados</span></a></li>
 							</ul>	
 						</li>
 						<!-- Categorias -->
@@ -196,6 +198,7 @@
 	<script src="js/counter.js"></script>
 	<script src="js/retina.js"></script>
 	<script src="js/custom.js"></script>
+	<script type="text/javascript" src="js/aplicacion.js"></script>
 <!-- end: JavaScript-->	
 </body>
 </html>

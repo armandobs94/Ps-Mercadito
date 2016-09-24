@@ -1,0 +1,13 @@
+/*Color de fondo de los div de usuarios*/
+.detalle{
+  color:black; 
+  padding-bottom: 10px;
+  background: #A5A4A2;
+}
+/*Solo para el boton generar contrasenia*/
+.espacio{
+	margin-top: -10px;
+	margin-left: 15px;
+	width: 30px;
+	height: 23px;
+}

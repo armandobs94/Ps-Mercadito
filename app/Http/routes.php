@@ -17,10 +17,7 @@ Route::get('home', 'HomeController@index');
 Route::resource('prueba','PruebaController');
 /*-----------------------------PANEL DE CONTROL----------------------*/
 Route::resource('panel','PanelController');
-Route::resource('panel-nuevo-usuario','PanelController@create');
-Route::resource('panel-ver-usuarios','PanelController@listado');
+Route::resource('panel-usuarios-nuevo','PanelController@create');
+Route::resource('panel-usuarios-lista','PanelUsuariosController');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+

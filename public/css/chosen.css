@@ -6,11 +6,6 @@
   zoom: 1;
   *display: inline;
 }
-.detalle{
-  color:black; 
-  padding-bottom: 10px;
-  background: #A5A4A2;
-}
 .chzn-container .chzn-drop {
   background: #fff;
   border: 1px solid #aaa;

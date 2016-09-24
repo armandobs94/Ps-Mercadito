@@ -5,7 +5,7 @@ use Mercadito\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class PanelController extends Controller {
+class PanelUsuariosController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -14,7 +14,7 @@ class PanelController extends Controller {
 	 */
 	public function index()
 	{
-		return view('panel_inicio');
+		return view('panel_usuarios_lista');
 	}
 
 	/**
@@ -24,7 +24,7 @@ class PanelController extends Controller {
 	 */
 	public function create()
 	{
-		return view('panel_usuarios_nuevo');
+		//
 	}
 
 	/**
